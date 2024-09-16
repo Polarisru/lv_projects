@@ -13,13 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="E:/Projects/LittlevGL/" />
 				</Compiler>
-				<Linker>
-					<Add library="mingw32" />
-					<Add library="SDL2main" />
-					<Add library="SDL2" />
-				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/LittlevGL" prefix_auto="1" extension_auto="1" />
@@ -36,7 +30,13 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="../codeblocks" />
 		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDL2main" />
+			<Add library="SDL2" />
+		</Linker>
 		<Unit filename="lv_conf.h" />
 		<Unit filename="lv_drivers/display/R61581.c">
 			<Option compilerVar="CC" />
@@ -596,8 +596,6 @@
 			<code_completion>
 				<search_path add="E:\Projects\LittlevGL\" />
 			</code_completion>
-			<envvars />
-			<debugger />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
